@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="heading-note">LEARN • SHARE • CONNECT</p>
+        <h1>Seminar Registration System</h1>
+        <p>A new topic. A fresh idea. Your next learning opportunity.</p>
+    </header>
+
+    <main>
+        <section class="welcome-box">
+            <img src="images/seminar.jpg" alt="People taking part in a group discussion" width="900" height="601">
+            <div class="welcome-text">
+                <h2>Learn beyond the classroom</h2>
+                <p>Explore a topic you enjoy, ask questions and build your knowledge. Choose a seminar and join the conversation.</p>
+                <div class="tags"><span>Free registration</span><span>Open to students</span></div>
+
+                <h3>What would you like to learn?</h3>
+                <ul class="seminar-list">
+                    <li><span class="number">01</span><div><strong>Java Full Stack</strong><p>Frontend, Java backend and databases.</p></div></li>
+                    <li><span class="number">02</span><div><strong>Web Development</strong><p>Start with HTML, CSS and JavaScript.</p></div></li>
+                    <li><span class="number">03</span><div><strong>Introduction to AI</strong><p>Discover AI and its everyday uses.</p></div></li>
+                </ul>
+                <p class="small-note">Sample seminars for a college mini project.</p>
+            </div>
+        </section>
+
+        <section class="form-box">
+            <p class="form-label">STUDENT REGISTRATION</p>
+            <h2>Join a seminar</h2>
+            <p class="form-description">Fill in your details below to get started.<br>All fields are required.</p>
+
+            <form id="registrationForm" novalidate>
+                <div class="row">
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" maxlength="80" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" maxlength="120" autocomplete="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <label for="phone">Mobile number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="10-digit Indian number" maxlength="10" inputmode="numeric" autocomplete="tel-national" required>
+                    </div>
+                    <div class="field">
+                        <label for="college">College name</label>
+                        <input type="text" id="college" name="college" placeholder="Enter your college" maxlength="120" autocomplete="organization" required>
+                    </div>
+                </div>
+                <label for="seminar">Choose your seminar</label>
+                <select id="seminar" name="seminar" required>
+                    <option value="">-- Select a seminar --</option>
+                    <option>Java Full Stack</option>
+                    <option>Web Development</option>
+                    <option>Introduction to AI</option>
+                </select>
+
+                <div class="buttons">
+                    <button type="submit" id="registerButton">Register for seminar</button>
+                    <button type="reset" id="clearButton">Clear</button>
+                </div>
+                <p id="message" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="reminder">
+                <h3>Before you register</h3>
+                <p>Use a valid email and mobile number. You can register for different seminars, but only once per seminar with the same email.</p>
+            </div>
+            <p class="small-note">Your registration number appears here after you submit. No email is sent. Please use sample details while testing.</p>
+            <noscript>Please enable JavaScript to submit the form.</noscript>
+        </section>
+    </main>
+
+    <footer>
+        <p>Seminar Registration System · Java Full Stack Mini Project</p>
+        <p class="photo-credit">Illustrative photo: <a href="https://www.pexels.com/photo/group-of-people-on-a-conference-room-1181406/" target="_blank" rel="noopener">Christina Morillo / Pexels</a></p>
+    </footer>
+</body>
+</html>

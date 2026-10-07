@@ -1,0 +1,304 @@
+/* Page layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f3f9;
+    color: #27334a;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #263e6c;
+    color: white;
+    text-align: center;
+    padding: 28px 20px 32px;
+    border-bottom: 5px solid #dbad61;
+}
+
+header h1 {
+    margin: 4px 0 6px;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    color: #e1e8f5;
+    font-size: 14px;
+}
+
+header .heading-note {
+    color: #f0ca8c;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main {
+    max-width: 1080px;
+    margin: 32px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.welcome-box, .form-box {
+    background-color: white;
+    border: 1px solid #dfe5ef;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(33, 51, 83, 0.04);
+}
+
+.welcome-box {
+    width: 42%;
+    overflow: hidden;
+}
+
+.welcome-box img {
+    display: block;
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+}
+
+.welcome-text {
+    padding: 24px;
+}
+
+h2 {
+    margin: 0 0 10px;
+    font-size: 23px;
+    color: #263e6c;
+    line-height: 1.3;
+}
+
+.welcome-text > p {
+    font-size: 13px;
+    color: #657086;
+    margin: 0 0 16px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tags span {
+    background-color: #eef3fb;
+    border-radius: 4px;
+    padding: 4px 9px;
+    color: #3d5a88;
+    font-size: 11px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.seminar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seminar-list li {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid #edf0f5;
+}
+
+.number {
+    color: #8b6a35;
+    background-color: #faf3e7;
+    border-radius: 5px;
+    font-size: 11px;
+    padding: 5px 8px;
+    height: fit-content;
+}
+
+.seminar-list strong {
+    font-size: 13px;
+}
+
+.seminar-list p {
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: #657086;
+}
+
+/* Registration form */
+.form-box {
+    width: 58%;
+    padding: 30px;
+}
+
+.form-label {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: #5575a9;
+    margin: 0 0 8px;
+}
+
+.form-box h2 {
+    font-size: 27px;
+}
+
+.form-description {
+    margin: 0 0 26px;
+    font-size: 13px;
+    color: #657086;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.field {
+    width: 50%;
+    min-width: 0;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 22px;
+    border: 1px solid #ccd5e3;
+    border-radius: 5px;
+    background-color: #fbfcfe;
+    color: #27334a;
+    font: 13px Arial, sans-serif;
+}
+
+input::placeholder {
+    color: #7d8799;
+}
+
+input:focus, select:focus, button:focus-visible {
+    outline: 2px solid #5478b1;
+    outline-offset: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 3px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #345991;
+    color: white;
+    padding: 13px 18px;
+    font: bold 13px Arial, sans-serif;
+    cursor: pointer;
+}
+
+#registerButton {
+    flex: 1;
+}
+
+button:hover {
+    background-color: #263e6c;
+}
+
+#clearButton {
+    background-color: #eaf0f7;
+    color: #405577;
+}
+
+#clearButton:hover {
+    background-color: #dce5f1;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#message {
+    margin: 16px 0 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#message:empty {
+    display: none;
+}
+
+.error { color: #b12b2b; }
+.success { color: #26733f; background-color: #edf8f0; padding: 12px; border-radius: 5px; }
+
+.reminder {
+    margin-top: 28px;
+    border-top: 1px solid #e5e9f0;
+    padding-top: 22px;
+}
+
+.reminder h3 {
+    margin-bottom: 6px;
+}
+
+.reminder p {
+    margin: 0;
+    font-size: 12px;
+    color: #657086;
+}
+
+.small-note, .welcome-text > .small-note {
+    margin: 18px 0 0;
+    color: #747f90;
+    font-size: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 0 20px 24px;
+    color: #657086;
+    font-size: 12px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+.photo-credit {
+    font-size: 10px;
+}
+
+footer a {
+    color: inherit;
+}
+
+/* Stack the sections on small screens. */
+@media (max-width: 800px) {
+    main { flex-direction: column; max-width: 620px; }
+    .welcome-box, .form-box { width: 100%; }
+    .welcome-box img { height: 230px; }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 24px; }
+    header p { font-size: 12px; }
+    main { padding: 0 15px; margin: 22px auto; gap: 20px; }
+    .form-box, .welcome-text { padding: 22px; }
+    .row { flex-direction: column; gap: 0; }
+    .field { width: 100%; }
+}
